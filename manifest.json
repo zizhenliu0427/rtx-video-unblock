@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "RTX Video Unblock (prototype)",
+  "version": "0.1.0",
+  "description": "Clears invisible page elements that keep NVIDIA RTX Video (VSR / HDR) away from a browser video, and shows what is still in the way.",
+  "minimum_chrome_version": "116",
+  "background": { "service_worker": "background.js" },
+  "action": { "default_title": "RTX Video Unblock" },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"],
+    "all_frames": true,
+    "run_at": "document_idle"
+  }]
+}
