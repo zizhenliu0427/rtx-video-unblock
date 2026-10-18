@@ -1,5 +1,7 @@
 # RTX Video Unblock (prototype)
 
+English | [中文](README.zh-CN.md)
+
 Chrome / Edge extension for Windows + NVIDIA RTX. It clears invisible page
 elements that keep NVIDIA RTX Video (VSR / RTX HDR) away from a browser video,
 and tells you when something visible is in the way.
@@ -65,3 +67,8 @@ this folder.
   video inside an iframe is not seen.
 - An extension cannot read `chrome://histograms`, so the badge is a heuristic;
   the histogram is the ground truth.
+- Framegen's *RTX Video page fix* does the same job; don't run both at once.
+
+## License
+
+[MIT](LICENSE)
